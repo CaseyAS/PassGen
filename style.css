@@ -1,3 +1,11 @@
+footer {
+    height: 50px;
+    width: 640px;
+    margin: auto;
+    background-color: darkgray;
+    text-align: center;
+    padding: auto;
+}
 .container {
     width: 640px;
     margin: auto;

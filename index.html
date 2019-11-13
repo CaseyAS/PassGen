@@ -35,19 +35,34 @@
         </div>
         <div class="row">
             <div class="col-lg">
-                <div id="choiceRaido">
-                    <h3>Number Of Characters</h3><br/>
-                    <p>Would you like Special Chars?</p><br/>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <div id="choiceRaido"></div>
+                <br/>
+                        <form action="/action_page.php" id="numChar">
+                            How many Characters? <br/> 
+                            (Must be between 8 and 128) <br/> 
+                            <input type="number" name="FirstName" value="8"><br/><br/>
+                        </form>
+                    
+                    <div class="btn-group-toggle" data-toggle="buttons" id="specialChar">
                             <label class="btn btn-secondary active">
-                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes
+                              <input type="checkbox" checked autocomplete="off"> Special Characters?
                             </label>
-                            <label class="btn btn-secondary">
-                              <input type="radio" name="options" id="option2" autocomplete="off"> No
+                          </div><br/>
+                    <div class="btn-group-toggle" data-toggle="buttons" id="lowCase">
+                            <label class="btn btn-secondary active">
+                              <input type="checkbox" checked autocomplete="off"> lowercase?
                             </label>
-                    <h3>Would you like lowercase Chars?</h3><br/>
-                    <h3>Uppercase?</h3>
-                    <h3>Numbers?</h3>
+                          </div><br/>
+                    <div class="btn-group-toggle" data-toggle="buttons" id="upCase">
+                            <label class="btn btn-secondary active">
+                              <input type="checkbox" checked autocomplete="off"> Uppercase?
+                            </label>
+                          </div><br/>
+                    <div class="btn-group-toggle" data-toggle="buttons" id="numbers">
+                            <label class="btn btn-secondary active">
+                              <input type="checkbox" checked autocomplete="off"> Numbers?
+                            </label>
+                          </div><br/>
                 </div>
             </div>
         </div>
@@ -56,4 +71,9 @@
     </div>
     
 </body>
+<footer>
+    <div class="row">
+        <div class="col-lg" style="padding-top: 23px;"> Copywrite 2019c</div>
+    </div>
+</footer>
 </html>
