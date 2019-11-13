@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-lg">
                 <div id="textShow">
-                        <textarea> Filler </textarea>
+                        <textarea id="pwArea"> Please make sure you have checked your desired options below </textarea>
                 </div>
             </div>
         </div>
@@ -37,36 +37,36 @@
             <div class="col-lg">
                 <div id="choiceRaido"></div>
                 <br/>
-                        <form action="/action_page.php" id="numChar">
+                        <form id="numChar">
                             How many Characters? <br/> 
                             (Must be between 8 and 128) <br/> 
                             <input type="number" name="FirstName" value="8"><br/><br/>
                         </form>
                     
-                    <div class="btn-group-toggle" data-toggle="buttons" id="specialChar">
+                    <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-secondary active">
-                              <input type="checkbox" checked autocomplete="off"> Special Characters?
+                              <input type="checkbox" id="specialChar" checked autocomplete="off"> Special Characters?
                             </label>
                           </div><br/>
-                    <div class="btn-group-toggle" data-toggle="buttons" id="lowCase">
+                    <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-secondary active">
-                              <input type="checkbox" checked autocomplete="off"> lowercase?
+                              <input type="checkbox" id="lowCase" checked autocomplete="off"> lowercase?
                             </label>
                           </div><br/>
-                    <div class="btn-group-toggle" data-toggle="buttons" id="upCase">
+                    <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-secondary active">
-                              <input type="checkbox" checked autocomplete="off"> Uppercase?
+                              <input type="checkbox" id="upCase" checked autocomplete="off"> Uppercase?
                             </label>
                           </div><br/>
-                    <div class="btn-group-toggle" data-toggle="buttons" id="numbers">
+                    <div class="btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-secondary active">
-                              <input type="checkbox" checked autocomplete="off"> Numbers?
+                              <input type="checkbox" id="numbers" checked autocomplete="off"> Numbers?
                             </label>
                           </div><br/>
                 </div>
             </div>
         </div>
-    <!--<script src="script.js"></script>-->
+    <script src="script.js"></script>
 
     </div>
     
